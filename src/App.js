@@ -13,7 +13,13 @@ function App() {
           <p>Тут у нас хедер</p>
         </Container>
       </header>
-      <Profile user={user} />
+      <Profile
+        name={user.name}
+        avatar={user.avatar}
+        tag={user.tag}
+        location={user.location}
+        stats={user.stats}
+      />
     </div>
   );
 }
