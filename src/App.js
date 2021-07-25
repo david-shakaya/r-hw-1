@@ -1,9 +1,9 @@
 // import "./App.css";
 import user from "./data/user.json";
+import statistics from "./data/statistical.json";
 import Container from "./components/Container/Container";
 import Profile from "./components/Profile/Profile";
-
-console.log(user);
+import StatisticsList from "./components/StatisticsList/StatisticsList";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         location={user.location}
         stats={user.stats}
       />
+      <StatisticsList list={statistics} />
     </div>
   );
 }

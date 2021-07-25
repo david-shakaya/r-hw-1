@@ -41,10 +41,10 @@ const Profile = ({ avatar, name, tag, location, stats }) => {
 
 export default Profile;
 
-// Profile.propTypes = {
-//   user: PropTypes.oneOfType(
-//     PropTypes.shape({
-//       name: PropTypes.string.isRequired,
-//     })
-//   ),
-// };
+Profile.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number),
+};
