@@ -1,0 +1,35 @@
+.statistics {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.title {
+  text-align: center;
+}
+.list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.list_item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.not_found {
+  composes: list_item;
+  background-color: #f37676;
+}
+
+.percentage {
+  display: block;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  text-align: center;
+}

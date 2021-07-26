@@ -1,9 +1,11 @@
 // import "./App.css";
 import user from "./data/user.json";
 import statistics from "./data/statistical.json";
+import friendList from "./data/friend-list.json";
 import Container from "./components/Container/Container";
 import Profile from "./components/Profile/Profile";
 import StatisticsList from "./components/StatisticsList/StatisticsList";
+import FriendList from "./components/FriendList/FriendList";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         stats={user.stats}
       />
       <StatisticsList list={statistics} />
+      <FriendList friends={friendList} />
     </div>
   );
 }
