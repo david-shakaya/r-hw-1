@@ -12,8 +12,6 @@ const randomColor = () => {
   return `rgb(${r},${g},${b})`;
 };
 
-console.log(randomColor());
-
 const StatisticsList = ({ list }) => {
   return (
     <section className={s.statistics}>

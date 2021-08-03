@@ -2,7 +2,6 @@ import Container from "../Container/Container";
 import FriendListItem from "../FriendListItem/FriendListItem";
 
 const FriendList = ({ friends }) => {
-  console.log(friends);
   return (
     <section>
       <Container>

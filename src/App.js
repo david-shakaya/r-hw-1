@@ -2,10 +2,12 @@
 import user from "./data/user.json";
 import statistics from "./data/statistical.json";
 import friendList from "./data/friend-list.json";
+import transactions from "./data/transactions.json";
 import Container from "./components/Container/Container";
 import Profile from "./components/Profile/Profile";
 import StatisticsList from "./components/StatisticsList/StatisticsList";
 import FriendList from "./components/FriendList/FriendList";
+import TransactionsList from "./components/TransactionsList/TransactionsList";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
       />
       <StatisticsList list={statistics} />
       <FriendList friends={friendList} />
+      <TransactionsList transactions={transactions} />
     </div>
   );
 }

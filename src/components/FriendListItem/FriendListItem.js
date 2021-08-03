@@ -1,9 +1,12 @@
+import s from "./FriendListItem.module.scss";
+
 const FriendListItem = ({ isOnline, avatar, name }) => {
+  const spanClass = isOnline ? s.red : s.blue;
   return (
-    <li>
-      <span class="status">{isOnline}</span>
-      <img class="avatar" src={avatar} alt={name} width="48" />
-      <p class="">{name}</p>
+    <li className={s.item}>
+      <span className={spanClass}></span>
+      <img className="avatar" src={avatar} alt={name} width="48" />
+      <p className="">{name}</p>
     </li>
   );
 };

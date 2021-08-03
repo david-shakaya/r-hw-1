@@ -1,0 +1,23 @@
+.item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.general-icon {
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.red {
+  composes: general-icon;
+  background-color: rgb(255, 0, 64);
+}
+
+.blue {
+  composes: general-icon;
+  background-color: blue;
+}
