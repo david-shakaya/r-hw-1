@@ -1,4 +1,5 @@
 import TransactionsListItem from "../TransactionsListItem/TransactionsListItem";
+import PropTypes from "prop-types";
 
 const TransactionsList = ({ transactions }) => {
   return (
@@ -22,6 +23,14 @@ const TransactionsList = ({ transactions }) => {
       })}
     </table>
   );
+};
+
+TransactionsList.propTypes = {
+  transactions: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default TransactionsList;

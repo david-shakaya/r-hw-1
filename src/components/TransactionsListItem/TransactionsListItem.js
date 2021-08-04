@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const TransactionsListItem = ({ type, amount, currency }) => {
   return (
     <tbody>
@@ -8,6 +10,12 @@ const TransactionsListItem = ({ type, amount, currency }) => {
       </tr>
     </tbody>
   );
+};
+
+TransactionsListItem.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
 };
 
 export default TransactionsListItem;

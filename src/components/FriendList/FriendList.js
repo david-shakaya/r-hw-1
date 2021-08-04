@@ -1,7 +1,9 @@
 import Container from "../Container/Container";
 import FriendListItem from "../FriendListItem/FriendListItem";
+import PropTypes from "prop-types";
 
 const FriendList = ({ friends }) => {
+  console.log(friends);
   return (
     <section>
       <Container>
@@ -21,6 +23,14 @@ const FriendList = ({ friends }) => {
       </Container>
     </section>
   );
+};
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default FriendList;

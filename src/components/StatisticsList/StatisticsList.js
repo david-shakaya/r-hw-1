@@ -1,6 +1,7 @@
 import StatisticsItem from "../StatisticsItem/StatisticsItem";
 import Container from "../Container/Container";
 import s from "./StatisticsList.module.scss";
+import PropTypes from "prop-types";
 
 // { id, label, percentage } - деструктуризация
 // percentage ? <li>текс</li> : <p>Отсутствует</p> --- Если данные приходят рендерим li если нет P
@@ -40,6 +41,14 @@ const StatisticsList = ({ list }) => {
       </Container>
     </section>
   );
+};
+
+StatisticsList.propTypes = {
+  list: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default StatisticsList;
